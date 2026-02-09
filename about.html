@@ -6,6 +6,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="loader">
+    <div class="spinner"></div>
+    <h2>Anitha & Co</h2>
+</div>
+
 
 <nav>
   <h2 class="logo">Anitha & Co</h2>
@@ -21,6 +26,10 @@
   <h1>About Us</h1>
   <p>We are a trusted company delivering quality services with dedication and professionalism.</p>
 </section>
+<script>
+    window.addEventListener("load", function () {
+    document.getElementById("loader").classList.add("hide");});
+</script>
 
 </body>
 </html>
