@@ -78,7 +78,20 @@ footer {
   background: #222;
   color: white;
 }
-/* ===== Loader Screen ===== */
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+nav {
+  background: black;
+  color: white;
+}
+
+/* your existing styles above */
+
+
+/* ===== ADD LOADER CSS HERE ===== */
 #loader {
   position: fixed;
   top: 0;
@@ -97,7 +110,6 @@ footer {
   transition: opacity 0.6s ease, visibility 0.6s;
 }
 
-/* Spinner circle */
 .spinner {
   width: 60px;
   height: 60px;
@@ -108,14 +120,12 @@ footer {
   margin-bottom: 20px;
 }
 
-/* Rotation animation */
 @keyframes spin {
   100% {
     transform: rotate(360deg);
   }
 }
 
-/* Hidden state */
 #loader.hide {
   opacity: 0;
   visibility: hidden;
