@@ -6,6 +6,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="spinner"></div>
+    <h2>Anitha & Co</h2>
+  </div>
+
 
   <!-- Navigation -->
   <nav>
@@ -49,6 +55,10 @@
   <footer>
     <p>© 2026 Anitha & Co. All rights reserved.</p>
   </footer>
+  <script>
+    window.addEventListener("load", function () {
+    document.getElementById("loader").classList.add("hide");});
+  </script>
 
 </body>
 </html>

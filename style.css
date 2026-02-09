@@ -78,3 +78,45 @@ footer {
   background: #222;
   color: white;
 }
+/* ===== Loader Screen ===== */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #111;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+  transition: opacity 0.6s ease, visibility 0.6s;
+}
+
+/* Spinner circle */
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #444;
+  border-top: 6px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+/* Rotation animation */
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Hidden state */
+#loader.hide {
+  opacity: 0;
+  visibility: hidden;
+}
